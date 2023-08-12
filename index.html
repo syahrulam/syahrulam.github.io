@@ -17,25 +17,29 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#home">Syahrul Adi Mustofa</a>
+        <div class="navbar-brand">Syahrul Adi Mustofa</div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#home">Profile</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about">Tentang Saya</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Hubungi</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    
 
 
     <div class="jumbotron" id="home">
@@ -43,27 +47,42 @@
         <div class="text-center">
           <img src="img/profile1.png" class="rounded-circle img-thumbnail">
           <h1 class="display-4">Syahrul Adi Mustofa</h1>
-          <h3 class="lead">Engineer | Undergraduate | Software Developer</h3>
+          <h3 class="lead"> Undergraduate | IT Support | Software Developer</h3>
         </div>
       </div>
     </div>
-
-
-    <!-- About -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <h2>About</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-12">
-            <p>My name is Syahrul Adi Mustofa. Currently I am still a student at one of the university in Indonesia. Bachelor of Applied Informatics Engineering.</p>
-          </div>
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h2>Tentang Saya</h2>
         </div>
       </div>
-    </section>
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <p class="lead" align="justify">Halo,</p>
+            <p class="lead" align="justify">
+              Saya adalah Syahrul Adi Mustofa, lulusan baru dari salah satu politeknik terkemuka di Indonesia dengan latar belakang pendidikan di bidang teknologi informasi. Saya memiliki semangat tinggi dalam pengembangan perangkat lunak dan teknologi. Saya juga memiliki pengalaman dalam mengembangkan website menggunakan framework Laravel dan pengembangan game menggunakan Unity.
+            </p>
+            <p class="lead" align="justify">
+              Prestasi saya mencakup penghargaan insentif pengabdian kepada masyarakat, yang mencerminkan komitmen saya dalam memberikan dampak positif melalui kontribusi teknologi. Saya yakin bahwa kombinasi pengetahuan teknis saya dalam pengembangan web dan game, serta semangat saya dalam memberikan dampak positif, membuat saya potensi yang berharga dalam tim pengembangan perangkat lunak.
+            </p>
+            <p class="lead" align="justify">
+              Anda dapat melihat profil LinkedIn saya di <a href="https://www.linkedin.com/in/syahrul-adi-mustofa/">linkedin.com/in/syahrul-adi-mustofa</a> untuk informasi lebih lanjut.
+            </p>
+            <p class="lead" align="justify">
+              Salam hormat,
+            </p>
+            <p class="lead" align="justify">
+              Syahrul Adi Mustofa
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
     <!-- Portfolio -->
     <section class="portfolio bg-light" id="portfolio">
       <div class="container">
@@ -76,10 +95,17 @@
         <div class="row">
           <div class="col-md mb-4">
             <div class="card">
-
-              <img class="card-img-top" src="img/portfolio/gamecce.jpg" alt="Card image cap">
+              <img class="card-img-top" src="img/portfolio/websitecce.JPG" alt="Class Child Education">
               <div class="card-body">
-                <a class="card-text" href="#">Game Mobile - CCE TK IT Khairunnisa Brebes</a>
+                <a class="card-text" href="https://classchildeducation.my.id/">Website - Taman Pintar Taman Kanak-Kanak</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md mb-4">
+            <div class="card">
+              <img class="card-img-top" src="img/portfolio/ccemobile.jpg" alt="Class Child Education">
+              <div class="card-body">
+                <a class="card-text" href="https://play.google.com/store/apps/details?id=com.samdevit.ClassChildEducation">Game Online Education - Taman Pintar Taman Kanak-Kanak</a>
               </div>
             </div>
           </div>
@@ -87,37 +113,42 @@
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/portfolio/pertamina.jpg" alt="Card image cap">
+              <img class="card-img-top" src="img/portfolio/pertamina.jpg" alt="Pertamina PDSI">
               <div class="card-body">
-                <a href="https://github.com/rezaalkhoeri/e-booking/tree/adi" class="card-text">Booking Room & Reservasi Kursi PDSI</a>
+                <a href="#" class="card-text">Booking Room & Reservasi Kursi PDSI</a>
               </div>
             </div>
           </div>
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/portfolio/smpnawakartika.jpg" alt="Card image cap">
+              <img class="card-img-top" src="img/portfolio/smpnawakartika.jpg" alt="smp nawakartika">
               <div class="card-body">
-                <a href="https://github.com/syahrulam/WEB_ProfileSMPNawakartika" class="card-text">Web Profile SMP Nawakartika Kedung Banteng </a>
+                <a href="https://nawakartika-kedungbanteng.my.id" class="card-text">Web Profile SMP Nawakartika Kedung Banteng </a>
               </div>
             </div>
           </div>   
         </div>
-
         <div class="row">
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/portfolio/chatbotweb.jpg" alt="Card image cap">
+              <img class="card-img-top" src="img/portfolio/backofficegame.JPG" alt="Class Child Education">
               <div class="card-body">
-                <a class="card-text" href="https://github.com/syahrulam/WEB_ChatbotPy">Chatbot With Deeplearning Web Base</a>
+                <a class="card-text" href="#">Website - Taman Pintar</a>
               </div>
             </div>
           </div>
-          
-
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/portfolio/emotion-recognition.png" alt="Card image cap">
+              <img class="card-img-top" src="img/portfolio/chatbotweb.jpg" alt="chatbot">
+              <div class="card-body">
+                <a class="card-text" href="https://github.com/syahrulam/WEB_ChatbotPy">Chatbot With Deeplearning For Web Base</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md mb-4">
+            <div class="card">
+              <img class="card-img-top" src="img/portfolio/emotion-recognition.png" alt="deteksi ekspresi">
               <div class="card-body">
                 <a href="https://github.com/syahrulam/MobileDev-BP6/tree/main/EmosionalAPP" class="card-text">Emotion Recognition Mobile Base</a>
               </div>
@@ -126,7 +157,7 @@
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/portfolio/fitting.jpg" alt="Card image cap">
+              <img class="card-img-top" src="img/portfolio/fitting.jpg" alt="efitting">
               <div class="card-body">
                 <a href="https://github.com/syahrulam/Mobile_Efitting/tree/main/eFittingKu" class="card-text">Effiting Clothes Mobile Base </a>
               </div>
@@ -137,7 +168,7 @@
         <div class="row">
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/portfolio/spktopsis.png" alt="Card image cap">
+              <img class="card-img-top" src="img/portfolio/spktopsis.png" alt="spk topsis laravel">
               <div class="card-body">
                 <a class="card-text" href="https://github.com/syahrulam/SPK_Topsis"> SPK Topsis Web Base</a>
               </div>
@@ -147,7 +178,7 @@
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/portfolio/crudweb.png" alt="Card image cap">
+              <img class="card-img-top" src="img/portfolio/crudweb.png" alt="crud website">
               <div class="card-body">
                 <a href="https://github.com/syahrulam/Website_CRUDPHP" class="card-text">Crud With PHP MySQL</a>
               </div>
@@ -156,7 +187,7 @@
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/portfolio/IST.png" alt="Card image cap">
+              <img class="card-img-top" src="img/portfolio/IST.png" alt="smart basnaz">
               <div class="card-body">
                 <a href="https://github.com/syahrulam/ciptaIST" class="card-text">Smart Baznas Sragen Web Base</a>
               </div>
@@ -168,63 +199,56 @@
     </section>
 
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="row pt-4 mb-4">
-          <div class="col text-center">
-            <h2>Contact</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-4">
-            <div class="card bg-primary text-white mb-4 text-center">
-              <div class="card-body">
-                <h5 class="card-title">Contact Me</h5>
-              </div>
-            </div>
-            
-            <ul class="list-group mb-4">
-              <li class="list-group-item"><h3>Location</h3></li>
-              <li class="list-group-item">Kemuning Street, Tegal City, 52124</li>
-              <li class="list-group-item">Central Java, Indonesia</li>
-            </ul>
-          </div>
-
-          <div class="col-lg-6">
-            
-            <form>
-              <div class="form-group">
-                <label for="nama">Name</label>
-                <input type="text" class="form-control" id="nama">
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" class="form-control" id="email">
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="text" class="form-control" id="phone">
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
-              </div>
-              <!-- <div class="form-group">
-                <button type="button" class="btn btn-primary">Send Message</button>
-              </div> -->
-              <button onclick="myFunction()">Sent</button>
-                <script>
-                  function myFunction() {
-                     alert("Layanan Mail Belum Tersedia, Masih Proses Develop ...");
-                  }
-                </script>
-            </form>
-
-          </div>
-        </div>
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="row pt-4 mb-4">
+      <div class="col text-center">
+        <h2>Contact</h2>
       </div>
-    </section>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-4">
+        <div class="card bg-primary text-white mb-4 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Contact Me</h5>
+          </div>
+        </div>
+        
+        <ul class="list-group mb-4">
+          <li class="list-group-item"><h3>Location</h3></li>
+          <li class="list-group-item">Kemuning Street, Tegal City, 52124</li>
+          <li class="list-group-item">Central Java, Indonesia</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6">
+        <form id="contactForm" method="post" action="https://formspree.io/f/mgejazpb" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="nama">Name</label>
+            <input type="text" class="form-control" id="nama" name="nama" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" class="form-control" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
     <!-- footer -->
@@ -249,5 +273,30 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        
+        fetch("https://formspree.io/f/mgejazpb", {
+          method: "POST",
+          body: new FormData(document.getElementById("contactForm")),
+        })
+          .then(function (response) {
+            if (response.ok) {
+              alert("Berhasil Terkirim!");
+              // Redirect to thank you page
+              window.location.href = "syahrulam.github.io";
+            } else {
+              alert("Gagal Terkirim.");
+            }
+          })
+          .catch(function (error) {
+            alert("Pesan Anda Sedang Dikirim.");
+          });
+      });
+    </script>
+  
+  
   </body>
 </html>
