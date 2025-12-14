@@ -42,36 +42,38 @@ https://templatemo.com/tm-595-3d-coverflow
         });
 
         // Image data with titles and descriptions
-        const imageData = [
-            {
-                title: "Mountain Landscape",
-                description: "Majestic peaks covered in snow during golden hour"
-            },
-            {
-                title: "Forest Path",
-                description: "A winding trail through ancient woodland"
-            },
-            {
-                title: "Lake Reflection",
-                description: "Serene waters mirroring the surrounding landscape"
-            },
-            {
-                title: "Ocean Sunset",
-                description: "Golden hour over endless ocean waves"
-            },
-            {
-                title: "Desert Dunes",
-                description: "Rolling sand dunes under vast blue skies"
-            },
-            {
-                title: "Starry Night",
-                description: "Countless stars illuminating the dark sky"
-            },
-            {
-                title: "Waterfall",
-                description: "Cascading water through lush green forest"
-            }
-        ];
+const imageData = [
+    {
+        title: "Market Analisis Future",
+        description: "Berpengalaman lebih dari 2 tahun menggunakan strategi BBMA"
+    },
+    {
+        title: "Administrasi & Data Management",
+        description: "Berpengalaman dalam pengelolaan data, dokumen, laporan, dan administrasi operasional"
+    },
+    {
+        title: "Web Developer",
+        description: "Pengembangan website responsif menggunakan HTML, CSS, JavaScript, dan PHP"
+    },
+    {
+        title: "Laravel & Flask Developer",
+        description: "Membangun sistem backend dan aplikasi web berbasis framework modern"
+    },
+    {
+        title: "IT Support & Troubleshooting",
+        description: "Menangani permasalahan hardware, software, dan jaringan komputer"
+    },
+    {
+        title: "Content & Website Management",
+        description: "Pengelolaan konten digital, website, dan sistem berbasis CMS"
+    },
+    {
+        title: "Freelancer & Project Based",
+        description: "Siap membantu project IT, website, dan solusi digital secara profesional"
+    }
+];
+
+
 
         // Create dots
         items.forEach((_, index) => {
