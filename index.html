@@ -1,107 +1,142 @@
-<!-- Header -->
-<header class="header" id="header">
-    <a href="#home" class="logo-container">
-        <div class="logo">
-            <!-- Logo tetap -->
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <!-- gradient dkk tetap -->
-            </svg>
-        </div>
-        <div class="logo-text">Syahrul Adi Mustofa Portfolio</div>
-    </a>
-    
-    <nav class="main-menu" id="mainMenu">
-        <a href="#home" class="menu-item active">Home</a>
-        <a href="#about" class="menu-item">About</a>
-        <a href="#contact" class="menu-item">Contact</a>
-        <a href="https://syahrulam.github.io" target="_blank" rel="noopener noreferrer" class="menu-item external">Website</a>
-    </nav>
-    
-    <div class="menu-toggle" id="menuToggle">
-        <span></span><span></span><span></span>
-    </div>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syahrul Adi Mustofa | Portfolio</title>
+    <link href="templatemo-3d-coverflow.css" rel="stylesheet">
+</head>
+<body>
 
-<!-- Home Section -->
-<section id="home" class="section">
-    <div class="coverflow-wrapper">
-        <div class="info">
-            <h2 id="current-title">Syahrul Adi Mustofa</h2>
-            <p id="current-description">
-                IT Support, Web Developer & Profesional Digital — Kota Tegal, Indonesia
-            </p>
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="#home" class="logo-container">
+            <div class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="10" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(-15 17.5 50)" />
+                    <rect x="35" y="15" width="15" height="70" fill="url(#grad1)" />
+                    <rect x="60" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(15 67.5 50)" />
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.5" />
+                </svg>
+            </div>
+            <div class="logo-text">Syahrul Adi Mustofa</div>
+        </a>
+        
+        <nav class="main-menu" id="mainMenu">
+            <a href="#home" class="menu-item active">Home</a>
+            <a href="#about" class="menu-item">About</a>
+            <a href="#contact" class="menu-item">Contact</a>
+            <a href="https://github.com/syahrulam" target="_blank" rel="noopener noreferrer" class="menu-item external">GitHub</a>
+        </nav>
+        
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+    </header>
 
-        <div class="coverflow-container" tabindex="0">
-            <div class="coverflow" id="coverflow">
-                <!-- Gambar bisa tetap placeholder atau diganti -->
-                <div class="coverflow-item" data-index="0">
-                    <div class="cover">
-                        <img src="images/profile-syahrul.jpg" alt="Foto Syahrul Adi Mustofa">
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="coverflow-wrapper">
+            <div class="info">
+                <h2 id="current-title">Web & IT Portfolio</h2>
+                <p id="current-description">Website, sistem, dan solusi IT yang pernah saya kerjakan</p>
+            </div>
+
+            <div class="coverflow-container" tabindex="0">
+                <div class="coverflow" id="coverflow">
+                    <div class="coverflow-item" data-index="0">
+                        <div class="cover image-loading"><img src="images/project1.jpg" alt="Project 1" loading="lazy"></div>
+                        <div class="reflection"></div>
                     </div>
-                    <div class="reflection"></div>
+                    <div class="coverflow-item" data-index="1">
+                        <div class="cover image-loading"><img src="images/project2.jpg" alt="Project 2" loading="lazy"></div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="2">
+                        <div class="cover image-loading"><img src="images/project3.jpg" alt="Project 3" loading="lazy"></div>
+                        <div class="reflection"></div>
+                    </div>
+                </div>
+
+                <button class="nav-button prev" onclick="navigate(-1)">‹</button>
+                <button class="nav-button next" onclick="navigate(1)">›</button>
+                <div class="dots-container" id="dots"></div>
+                <button class="play-pause-button" id="playPauseBtn" onclick="toggleAutoplay()">
+                    <span class="play-icon">▶</span>
+                    <span class="pause-icon" style="display:none;">❚❚</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="about-content">
+            <div class="about-header">
+                <h2>Tentang Saya</h2>
+                <p>IT Support, Web Developer, dan Software Developer</p>
+            </div>
+            <div class="about-main">
+                <div class="about-info">
+                    <h3>Profil Singkat</h3>
+                    <p>Saya berpengalaman dalam pengembangan website, sistem informasi, serta dukungan IT untuk kebutuhan bisnis dan personal.</p>
+                    <p>Fokus saya adalah membuat solusi yang efisien, responsif, dan mudah digunakan.</p>
+                    <ul class="feature-list">
+                        <li>Web Development (HTML, CSS, JavaScript, PHP)</li>
+                        <li>Framework Laravel & Flask</li>
+                        <li>IT Support & Troubleshooting</li>
+                        <li>Responsive Design</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- About Section -->
-<section id="about" class="section">
-    <div class="about-content">
-        <div class="about-header">
-            <h2>Tentang Syahrul Adi Mustofa</h2>
-            <p>Profesional di bidang Teknologi Informasi & Digital</p>
-        </div>
-        
-        <div class="about-main">
-            <div class="about-info">
-                <h3>Siapa Dia?</h3>
-                <p>
-                    Syahrul Adi Mustofa adalah seorang IT Support dan Web Developer dari Kota Tegal, Indonesia. 
-                    Ia memiliki keahlian dalam pengelolaan perangkat keras & lunak, pengembangan website dengan CMS, Laravel, dan Flask, serta pembuatan konten digital.:contentReference[oaicite:1]{index=1}
-                </p>
-
-                <ul class="feature-list">
-                    <li>Tanggal Lahir: 12 November 2001</li>
-                    <li>Gelar: Sarjana Terapan Komputer</li>
-                    <li>Keahlian: IT Support, HTML/CSS, JavaScript, PHP, Python, Laravel, WordPress</li>
-                    <li>Pengalaman: IT Support Staff, Developer Freelance, Web Developer Magang</li>
-                </ul>
-
-                <a href="https://syahrulam.github.io" class="cta-button" target="_blank" rel="noopener noreferrer">
-                    Lihat CV & Portfolio
-                </a>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact-content">
+            <div class="contact-header">
+                <h2>Kontak</h2>
+                <p>Hubungi saya untuk kerja sama atau project</p>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="section">
-    <div class="contact-content">
-        <div class="contact-header">
-            <h2>Kontak</h2>
-            <p>Hubungi Syahrul Adi Mustofa untuk peluang kerja atau kolaborasi</p>
-        </div>
-        
-        <div class="contact-container">
-            <div class="contact-info-section">
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <h4>Email</h4>
-                        <p>Syahrulam0@gmail.com</p>
+            <div class="contact-container">
+                <div class="contact-info-section">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-text"><h4>Email</h4><p>syahrul@email.com</p></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-text"><h4>Lokasi</h4><p>Tegal, Indonesia</p></div>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <h4>Phone / WhatsApp</h4>
-                        <p>+62 851 5654 8155</p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>Location</h4>
-                        <p>Kota Tegal, Indonesia</p>
-                    </div>
+                </div>
+                <div class="contact-form-section">
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group"><label>Nama</label><input type="text" required></div>
+                        <div class="form-group"><label>Email</label><input type="email" required></div>
+                        <div class="form-group"><label>Pesan</label><textarea required></textarea></div>
+                        <button type="submit" class="submit-btn">Kirim</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">© 2025 Syahrul Adi Mustofa</div>
+        </div>
+    </footer>
+
+<script src="templatemo-3d-coverflow-scripts.js"></script>
+</body>
+</html>
